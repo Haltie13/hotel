@@ -1,0 +1,5 @@
+pl/edu/agh/kis/pz1/commands/CommandFactoryTest.class
+pl/edu/agh/kis/pz1/RoomTest.class
+pl/edu/agh/kis/pz1/commands/CheckInCommandTest.class
+pl/edu/agh/kis/pz1/commands/CheckOutCommandTest.class
+pl/edu/agh/kis/pz1/HotelTest.class

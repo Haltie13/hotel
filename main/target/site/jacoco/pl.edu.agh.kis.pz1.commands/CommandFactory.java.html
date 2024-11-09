@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CommandFactory.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Modul glowny aplikacji - klasa Main z metoda main</a> &gt; <a href="index.source.html" class="el_package">pl.edu.agh.kis.pz1.commands</a> &gt; <span class="el_source">CommandFactory.java</span></div><h1>CommandFactory.java</h1><pre class="source lang-java linenums">package pl.edu.agh.kis.pz1.commands;
+
+import pl.edu.agh.kis.pz1.structure.Hotel;
+
+public class CommandFactory {
+    private final Hotel hotel;
+
+<span class="fc" id="L8">    public CommandFactory(Hotel hotel) {</span>
+<span class="fc" id="L9">        this.hotel = hotel;</span>
+<span class="fc" id="L10">    }</span>
+
+    public Command createCommand(String commandName) {
+<span class="fc bfc" id="L13" title="All 11 branches covered.">        switch (commandName.toLowerCase()) {</span>
+            case &quot;prices&quot;:
+<span class="fc" id="L15">                return new PricesCommand(hotel);</span>
+            case &quot;list&quot;:
+<span class="fc" id="L17">                return new ListCommand(hotel);</span>
+            case &quot;view&quot;:
+<span class="fc" id="L19">                return new ViewCommand(hotel);</span>
+            case &quot;checkin&quot;:
+<span class="fc" id="L21">                return new CheckInCommand(hotel);</span>
+            case &quot;checkout&quot;:
+<span class="fc" id="L23">                return new CheckOutCommand(hotel);</span>
+            case &quot;save&quot;:
+<span class="fc" id="L25">                return new SaveCommand(hotel);</span>
+            case &quot;load&quot;:
+<span class="fc" id="L27">                return new LoadCommand(hotel);</span>
+            case &quot;random&quot;:
+<span class="fc" id="L29">                return new RandomInicializeCommand(hotel);</span>
+            case &quot;exit&quot;:
+<span class="fc" id="L31">                return new ExitCommand();</span>
+            case &quot;help&quot;:
+<span class="fc" id="L33">                return new HelpCommand();</span>
+            default:
+<span class="fc" id="L35">                System.out.printf(&quot;Unknown command: %s%n&quot;, commandName);</span>
+<span class="fc" id="L36">                return null;</span>
+        }
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

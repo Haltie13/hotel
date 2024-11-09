@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PricesCommand.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Modul glowny aplikacji - klasa Main z metoda main</a> &gt; <a href="index.source.html" class="el_package">pl.edu.agh.kis.pz1.commands</a> &gt; <span class="el_source">PricesCommand.java</span></div><h1>PricesCommand.java</h1><pre class="source lang-java linenums">package pl.edu.agh.kis.pz1.commands;
+
+import pl.edu.agh.kis.pz1.structure.Hotel;
+
+import java.math.BigDecimal;
+import java.util.List;
+
+import pl.edu.agh.kis.pz1.util.MyMap;
+
+public class PricesCommand implements Command {
+    private final Hotel hotel;
+<span class="fc" id="L12">    public PricesCommand(Hotel hotel) {</span>
+<span class="fc" id="L13">        this.hotel = hotel;</span>
+<span class="fc" id="L14">    }</span>
+
+    @Override
+    public void execute() {
+<span class="nc" id="L18">        MyMap&lt;Integer, BigDecimal&gt; roomsPrices = hotel.listPrices();</span>
+<span class="nc" id="L19">        List&lt;Integer&gt; roomNumbers = roomsPrices.keys();</span>
+<span class="nc" id="L20">        List&lt;BigDecimal&gt; roomPrices = roomsPrices.values();</span>
+<span class="nc bnc" id="L21" title="All 2 branches missed.">        for (int i=0; i&lt;roomNumbers.size(); i++) {</span>
+<span class="nc" id="L22">            int roomNumber = roomNumbers.get(i);</span>
+<span class="nc" id="L23">            BigDecimal price = roomPrices.get(i);</span>
+<span class="nc" id="L24">            int roomCapacity = hotel.getRoomCapacity(roomNumber);</span>
+<span class="nc" id="L25">            System.out.printf(&quot;Room number: %d, price: %s, capacity: %d%n&quot;, roomNumber, price, roomCapacity);</span>
+        }
+<span class="nc" id="L27">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

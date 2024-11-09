@@ -1,0 +1,16 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Modul glowny aplikacji - klasa Main z metoda main,pl.edu.agh.kis.pz1.structure,Guest,4,9,0,0,2,4,1,2,1,2
+Modul glowny aplikacji - klasa Main z metoda main,pl.edu.agh.kis.pz1.structure,Hotel,238,72,11,3,44,16,12,7,6,6
+Modul glowny aplikacji - klasa Main z metoda main,pl.edu.agh.kis.pz1.structure,Room,231,413,29,27,40,73,22,25,5,14
+Modul glowny aplikacji - klasa Main z metoda main,pl.edu.agh.kis.pz1,HotelManagementApplication,48,0,4,0,16,0,4,0,2,0
+Modul glowny aplikacji - klasa Main z metoda main,pl.edu.agh.kis.pz1.commands,CheckInCommand,7,176,2,12,3,40,2,7,0,2
+Modul glowny aplikacji - klasa Main z metoda main,pl.edu.agh.kis.pz1.commands,LoadCommand,19,6,0,0,6,3,1,1,1,1
+Modul glowny aplikacji - klasa Main z metoda main,pl.edu.agh.kis.pz1.commands,ViewCommand,34,6,2,0,8,3,2,1,1,1
+Modul glowny aplikacji - klasa Main z metoda main,pl.edu.agh.kis.pz1.commands,ListCommand,26,6,4,0,7,3,3,1,1,1
+Modul glowny aplikacji - klasa Main z metoda main,pl.edu.agh.kis.pz1.commands,ExitCommand,6,3,0,0,3,1,1,1,1,1
+Modul glowny aplikacji - klasa Main z metoda main,pl.edu.agh.kis.pz1.commands,CheckOutCommand,0,80,0,4,0,17,0,4,0,2
+Modul glowny aplikacji - klasa Main z metoda main,pl.edu.agh.kis.pz1.commands,RandomInicializeCommand,4,6,0,0,2,3,1,1,1,1
+Modul glowny aplikacji - klasa Main z metoda main,pl.edu.agh.kis.pz1.commands,HelpCommand,4,3,0,0,2,1,1,1,1,1
+Modul glowny aplikacji - klasa Main z metoda main,pl.edu.agh.kis.pz1.commands,CommandFactory,0,83,0,11,0,16,0,12,0,2
+Modul glowny aplikacji - klasa Main z metoda main,pl.edu.agh.kis.pz1.commands,SaveCommand,19,6,0,0,6,3,1,1,1,1
+Modul glowny aplikacji - klasa Main z metoda main,pl.edu.agh.kis.pz1.commands,PricesCommand,55,6,2,0,9,3,2,1,1,1
